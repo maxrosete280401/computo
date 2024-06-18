@@ -84,17 +84,6 @@ DATABASES = {
     }
 }
 
-#cambiar esto a lo del profe original para sqlite3
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chat',  # Nombre de la base de datos creada
-        'USER': 'usu_max',  # Nombre de usuario creado
-        'PASSWORD': '123456',  # Contraseña del usuario
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}'''
 
 
 
