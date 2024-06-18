@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['computo.azurewebsites.net']
 
+CSRF_TRUSTED_ORIGINS = ['https://computo.azurewebsites.net']
+
 # Application definition
 
 INSTALLED_APPS = [
