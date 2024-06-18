@@ -12,8 +12,8 @@ class Persona(models.Model):
     carrera = models.ForeignKey(Carreras,on_delete=models.PROTECT)
     status = models.SmallIntegerField()
     
-def __str__(self):
-    return self.usu
+    def __str__(self):
+        return self.usu
     
 '''
 from persona.models import Persona

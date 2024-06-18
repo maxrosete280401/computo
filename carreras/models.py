@@ -4,9 +4,9 @@ from django.db import models
 class Carreras(models.Model):
     nombre = models.CharField(max_length=80)
     status = models.SmallIntegerField()
-    
-def __str__(self):
-    return self.nombre    
+        
+    def __str__(self):
+        return self.nombre    
 '''
 from carreras.models import Carreras
 c = Carreras(nombre="ING SISTEMAS",status=1)

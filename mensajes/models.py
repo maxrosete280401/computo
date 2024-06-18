@@ -6,9 +6,9 @@ class Mensajes(models.Model):
     txt_mensaje = models.CharField(max_length=80)
     persona = models.ForeignKey(Persona,on_delete=models.PROTECT)
     status = models.SmallIntegerField()
-    
-def __str__(self):
-    return self.txt_mensaje
+        
+    def __str__(self):
+        return self.txt_mensaje
 
 '''
 from mensajes.models import Mensajes
