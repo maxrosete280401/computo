@@ -77,8 +77,15 @@ WSGI_APPLICATION = 'chat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-#cambiar esto a lo del profe original para sqlite3
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+#cambiar esto a lo del profe original para sqlite3
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'chat',  # Nombre de la base de datos creada
@@ -87,7 +94,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
-}
+}'''
 
 
 
