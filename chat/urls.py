@@ -22,6 +22,7 @@ from mensajes.views import msg_bienvenida, msg_insertados
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenida/', hola),
-    path('mensaje/', msg_bienvenida, name='msg_bienvenida'),
+    path('', hola),
+    path('mensaje/', msg_insertados),
     path('mostrarmensajes/', msg_insertados)
 ]
